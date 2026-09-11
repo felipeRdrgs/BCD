@@ -1,0 +1,317 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Atributo: \cf2\b0 AGENDAMENTO\cf1\b 
+\par \cf0\b0 AGENDAMENTO DATETIME
+\par 
+\par \cf1\b 002 - Atributo: \cf2\b0 ANO_FABRICA\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 ANO_FABRICA\f1\'c7\'c3O DATE
+\par \f0 
+\par \cf1\b 003 - Atributo: \cf2\b0 ATIVO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 004 - Atributo: \cf2\b0 CALIBRAGEM\cf1\b 
+\par \cf0\b0 CALIBRAGEM VARCHAR(60)
+\par 
+\par \cf1\b 005 - Atributo: \cf2\b0 CARGO\cf1\b 
+\par \cf0\b0 CARGO VARCHAR(20)
+\par 
+\par \cf1\b 006 - Entidade: \cf2\b0 CLIENTES\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ID_CLIENTES INT AUTO_INCREMENT PRIMARY KEY
+\par ORCAMENTO FLOAT
+\par CPF VARCHAR(11) NOT NULL UNIQUE
+\par TELEFONE VARCHAR(9) NOT NULL UNIQUE
+\par DATA_DE_NASCIMENTO DATE
+\par NOME VARCHAR(60)
+\par 
+\par \cf1\b 007 - Atributo: \cf2\b0 COMPROVANTE\cf1\b 
+\par \cf0\b0 COMPROVANTE TEXT
+\par 
+\par \cf1\b 008 - Rela\f1\'e7\'e3o: \cf2\b0 CONSERTAM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta funcionarios a ve\f1\'edculos
+\par \f0 
+\par \cf1\b 009 - Atributo: \cf2\b0 CONSERTO\cf1\b 
+\par \cf0\b0 CONSERTO VARCHAR(50)
+\par 
+\par \cf1\b 010 - Atributo: \cf2\b0 CONTRATO\cf1\b 
+\par \cf0\b0 CONTRATO TEXT
+\par 
+\par \cf1\b 011 - Atributo: \cf2\b0 CONTRATO\cf1\b 
+\par \cf0\b0 CONTRATO TEXT
+\par 
+\par \cf1\b 012 - Rela\f1\'e7\'e3o: \cf2\b0 CONT\'c9M\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta ve\f1\'edculos a marcas
+\par \f0 
+\par \cf1\b 013 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 CPF VARCHAR(11) NOT NULL UNIQUE 
+\par \cf1\b 014 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 CPF VARCHAR(11) NOT NULL UNIQUE
+\par 
+\par \cf1\b 015 - Atributo: \cf2\b0 DATA_DE_NASCIMENTO\cf1\b 
+\par \cf0\b0 DATA_DE_NASCIMENTO DATE
+\par 
+\par \cf1\b 016 - Atributo: \cf2\b0 DATA_DE_NASCIMENTO\cf1\b 
+\par \cf0\b0 DATA_DE_NASCIMENTO DATE
+\par 
+\par \cf1\b 017 - Atributo: \cf2\b0 DATA_ENTREGA\cf1\b 
+\par \cf0\b0 DATA_DE_ENTRAGA DATETIME
+\par 
+\par \cf1\b 018 - Rela\f1\'e7\'e3o: \cf2\b0 D\'c3O\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta clientes a ordens de servi\f1\'e7o
+\par \f0 
+\par \cf1\b 019 - Rela\f1\'e7\'e3o: \cf2\b0 EXIGEM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta servi\f1\'e7os a fornecedores
+\par \f0 
+\par \cf1\b 020 - Rela\f1\'e7\'e3o: \cf2\b0 FABRICAM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta modelo a marcas 
+\par \cf1\b 021 - Rela\f1\'e7\'e3o: \cf2\b0 FAZEM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta clientes a pagamentos
+\par 
+\par \cf1\b 022 - Atributo: \cf2\b0 FORMA_DE_PAGAMENTO\cf1\b 
+\par \cf0\b0 FORMA_PAGAMENTO VARCHAR(60)
+\par 
+\par \cf1\b 023 - Atributo: \cf2\b0 FORMA_FORNECIMENTO\cf1\b 
+\par \cf0\b0 FORMA_FORNECIMENTO VARCHAR(60)
+\par 
+\par \cf1\b 024 - Entidade: \cf2\b0 FORNECEDORES\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ID FORNECEDORES 
+\par QUANTIDADE FORNECIDA 
+\par NOME 
+\par VALOR 
+\par FORMA_FORNECIMENTO 
+\par DATA DE ENTRAGA 
+\par 
+\par \cf1\b 025 - Rela\f1\'e7\'e3o: \cf2\b0 FORNECEM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta fornecedores a pe\f1\'e7as
+\par \f0 
+\par \cf1\b 026 - Atributo: \cf2\b0 FORNECIMENTO\cf1\b 
+\par \cf0\b0 FORNECIMENTO VARCHAR(60)
+\par 
+\par \cf1\b 027 - Entidade: \cf2\b0 FUNCION\f1\'c1RIOS\cf1\b 
+\par \cf0\b0\f0 organiza atributos:
+\par ID_FUNCIONARIO 
+\par CONTRATO 
+\par DATA DE NASCIMENTO
+\par CPF 
+\par TELEFONE
+\par CARGO 
+\par SALARIO 
+\par 
+\par \cf1\b 028 - Atributo: \cf2\b0 HORA_PAGAMENTO\cf1\b 
+\par \cf0\b0 HORA_PAGAMENTO TIMESTAMP
+\par 
+\par \cf1\b 029 - Atributo: \cf2\b0 ID_CLIENTE\cf1\b 
+\par \cf0\b0 ID_CLIENTES INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 030 - Atributo: \cf2\b0 ID_FORNECERORES\cf1\b 
+\par \cf0\b0 ID_FORNECEDORES INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 031 - Atributo: \cf2\b0 ID_FUNCIONARIO\cf1\b 
+\par \cf0\b0 ID_FUNCIONARIO INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 032 - Atributo: \cf2\b0 ID_MARCAS\cf1\b 
+\par \cf0\b0 ID_MARCA INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 033 - Atributo: \cf2\b0 ID_MODELO\cf1\b 
+\par \cf0\b0 ID_MODELO INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 034 - Atributo: \cf2\b0 ID_ORDENS_DE_SERVICOS\cf1\b 
+\par \cf0\b0 ID_ORDENS_DE_SERVICO INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 035 - Atributo: \cf2\b0 ID_PAGAMENTO\cf1\b 
+\par \cf0\b0 ID_PAGAMENTOS INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 036 - Atributo: \cf2\b0 ID_PECA\cf1\b 
+\par \cf0\b0 ID_PECA INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 037 - Atributo: \cf2\b0 ID_SERVICO\cf1\b 
+\par \cf0\b0 ID_SERVICO INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 038 - Atributo: \cf2\b0 ID_VEICULO\cf1\b 
+\par \cf0\b0 ID_VEICULO INT AUTO_INCREMENT PRIMARY KEY
+\par 
+\par \cf1\b 039 - Atributo: \cf2\b0 INATIVO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 040 - Atributo: \cf2\b0 LUGAR_FABRICA\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 LUGAR_FABRICA\f1\'c7\'c3O VARCHAR(60)
+\par \f0 
+\par \cf1\b 041 - Atributo: \cf2\b0 MARCA\cf1\b 
+\par \cf0\b0 MARCA VARCHAR(60)
+\par 
+\par \cf1\b 042 - Entidade: \cf2\b0 MARCAS\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ID ORDENS DE SERVICO 
+\par POLIMENTO 
+\par TROCA DE PECAS 
+\par CONSERTO
+\par CALIBRAGEM 
+\par TUNAGEM 
+\par PINTURA 
+\par 
+\par \cf1\b 043 - Atributo: \cf2\b0 MODELO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 044 - Entidade: \cf2\b0 MODELO\cf1\b 
+\par \cf0\b0 essa entidade organiza atributos:
+\par ID MODELO
+\par VALOR 
+\par TIPO 
+\par ANO FABRICA\f1\'c7\'c3O
+\par NOME 
+\par LUGAR FABRICA\'c7\'c3O 
+\par \f0 
+\par \cf1\b 045 - Atributo: \cf2\b0 MODELO\cf1\b 
+\par \cf0\b0 MODELO VARCHAR(60)
+\par 
+\par \cf1\b 046 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60)
+\par 
+\par \cf1\b 047 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60)
+\par 
+\par \cf1\b 048 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60)
+\par 
+\par \cf1\b 049 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60)
+\par 
+\par \cf1\b 050 - Atributo: \cf2\b0 ORCAMENETO\cf1\b 
+\par \cf0\b0 ORCAMENTO FLOAT
+\par 
+\par \cf1\b 051 - Atributo: \cf2\b0 ORCAMENTO\cf1\b 
+\par \cf0\b0 ORCAMENTO TEXT
+\par 
+\par \cf1\b 052 - Entidade: \cf2\b0 ORDENS DE SERVI\f1\'c7O\cf1\b 
+\par \cf0\b0\f0 essa entidade organiza atributos:
+\par ID ORDENS DE SERVICO 
+\par POLIMENTO 
+\par TROCA DE PECAS 
+\par CONSERTO 
+\par CALIBRAGEM 
+\par TUNAGEM 
+\par PINTURA 
+\par 
+\par \cf1\b 053 - Atributo: \cf2\b0 ORIGEM\cf1\b 
+\par \cf0\b0 ORIGEM VARCHAR(50) NOT NULL UNIQUE
+\par 
+\par \cf1\b 054 - Entidade: \cf2\b0 PAGAMENTOS\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ID PAGAMENTOS 
+\par COMPROVANTE 
+\par CONTRATO 
+\par HORA PAGAMENTO 
+\par VALOR 
+\par FORMA
+\par 
+\par \cf1\b 055 - Atributo: \cf2\b0 PAIS_ORIGEM\cf1\b 
+\par \cf0\b0 PAIS_ORIGEM VARCHAR(60)
+\par 
+\par \cf1\b 056 - Atributo: \cf2\b0 PECAS\cf1\b 
+\par \cf0\b0 PECAS VARCHAR(50)
+\par 
+\par \cf1\b 057 - Atributo: \cf2\b0 PECAS\cf1\b 
+\par \cf0\b0 PECAS VARCHAR(20)
+\par 
+\par \cf1\b 058 - Entidade: \cf2\b0 PE\f1\'c7AS\cf1\b 
+\par \cf0\b0\f0 essa entidade organiza:
+\par ID PECA 
+\par FORNECIMENTO 
+\par PRECO 
+\par ORIGEM
+\par QUANTIDADE 
+\par TIPO PECA
+\par 
+\par \cf1\b 059 - Atributo: \cf2\b0 PINTURA\cf1\b 
+\par \cf0\b0 PINTURA VARCHAR(60
+\par 
+\par \cf1\b 060 - Atributo: \cf2\b0 PLACA\cf1\b 
+\par \cf0\b0 PLACA VARCHAR(8) NOT NULL UNIQUE
+\par 
+\par \cf1\b 061 - Atributo: \cf2\b0 POLIMENTO\cf1\b 
+\par \cf0\b0 POLIMENTO VARCHAR(60)
+\par 
+\par \cf1\b 062 - Rela\f1\'e7\'e3o: \cf2\b0 POSSUEM\cf1\b 
+\par \cf0\b0\f0 essa entidade conecta funcionarios a clientes
+\par 
+\par \cf1\b 063 - Atributo: \cf2\b0 PRECO\cf1\b 
+\par \cf0\b0 PRECO FLOAT
+\par 
+\par \cf1\b 064 - Atributo: \cf2\b0 QUANTIDADE\cf1\b 
+\par \cf0\b0 QUANTIDADE INT
+\par 
+\par \cf1\b 065 - Atributo: \cf2\b0 QUANTIDADE_FORNECIDA\cf1\b 
+\par \cf0\b0 QUANTIDADE_FORNECIDA INT
+\par 
+\par \cf1\b 066 - Atributo: \cf2\b0 SALARIO\cf1\b 
+\par \cf0\b0 SALARIO DECIMAL(5,2) NOT NULL UNIQUE
+\par 
+\par \cf1\b 067 - Entidade: \cf2\b0 SERVI\f1\'c7OS\cf1\b 
+\par \cf0\b0\f0 essa entidade organiza atributos:
+\par ID SERVICO 
+\par TIPO SERVICO 
+\par OR\f1\'c7AMENTO 
+\par PE\'c7AS 
+\par AGENDAMENTO 
+\par TERMOS 
+\par \f0 
+\par \cf1\b 068 - Atributo: \cf2\b0 STATUS_SERVICO\cf1\b 
+\par \cf0\b0 STATUS_SERVICO ENUM ('ATIVO','INATIVO')
+\par 
+\par \cf1\b 069 - Atributo: \cf2\b0 TELEFONE\cf1\b 
+\par \cf0\b0 TELEFONE VARCHAR(9) NOT NULL UNIQUE
+\par 
+\par \cf1\b 070 - Atributo: \cf2\b0 TELEFONE\cf1\b 
+\par \cf0\b0 TELEFONE VARCHAR(9) NOT NULL UNIQUE 
+\par 
+\par \cf1\b 071 - Rela\f1\'e7\'e3o: \cf2\b0 TEM\cf1\b 
+\par \cf0\b0\f0 essa rela\f1\'e7\'e3o conecta funcionarios a servi\'e7os
+\par \f0 
+\par \cf1\b 072 - Atributo: \cf2\b0 TERMOS\cf1\b 
+\par \cf0\b0 TERMOS TEXT
+\par 
+\par \cf1\b 073 - Atributo: \cf2\b0 TIPO\cf1\b 
+\par \cf0\b0 TIPO VARCHAR(60),
+\par 
+\par \cf1\b 074 - Atributo: \cf2\b0 TIPO_MARCA\cf1\b 
+\par \cf0\b0 TIPO_MARCA VARCHAR(50)
+\par 
+\par \cf1\b 075 - Atributo: \cf2\b0 TIPO_PECA\cf1\b 
+\par \cf0\b0 TIPO_PECA VARCHAR(60)
+\par 
+\par \cf1\b 076 - Atributo: \cf2\b0 TIPO_SERVICO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 077 - Atributo: \cf2\b0 TIPO_SERVICOS\cf1\b 
+\par \cf0\b0 TIPO_SERVICO VARCHAR(60)
+\par 
+\par \cf1\b 078 - Atributo: \cf2\b0 TIPO_VEICULO\cf1\b 
+\par \cf0\b0 TIPO_VEICULO VARCHAR(60)
+\par 
+\par \cf1\b 079 - Atributo: \cf2\b0 TROCA_DE_PECAS\cf1\b 
+\par \cf0\b0 TROCA_DE_PECAS VARCHAR(60)
+\par 
+\par \cf1\b 080 - Atributo: \cf2\b0 TUNAGEM\cf1\b 
+\par \cf0\b0 TUNAGEM VARCHAR(60)
+\par 
+\par \cf1\b 081 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT
+\par 
+\par \cf1\b 082 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT
+\par 
+\par \cf1\b 083 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT
+\par 
+\par \cf1\b 084 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT
+\par 
+\par \cf1\b 085 - Entidade: \cf2\b0 VE\f1\'cdCULOS\cf1\b 
+\par \cf0\b0\f0 essa entidade organiza atributos:
+\par ID_CLIENTES 
+\par ORCAMENTO 
+\par CPF 
+\par TELEFONE 
+\par DATA DE NASCIMENTO 
+\par NOME
+\par 
+\par 
+\par }
+ 
