@@ -52,3 +52,28 @@ OBSERVACAO TEXT,
 FOREIGN KEY(id_produto) REFERENCES produto (id_produto) 
 );
 
+-- DESAFIOS
+
+-- 1. Uma categoria pode possuir vários produtos. Cada produto pertence a apenas
+-- -- uma categoria.
+
+-- CATEGORIA (1,n) ---> POSSUI ---> PRODUTOS (1,n) 
+
+-- 2. Um funcionário pode registrar vários pedidos. Cada pedido é registrado por um
+-- funcionário.
+
+-- FUNCIONÁRIO (1,n) ---> REGISTRA ---> PEDIDO (1,n)
+
+-- 3. Um fornecedor comercializa vários produtos, e o mesmo produto pode ser
+-- comprado de vários fornecedores.
+
+-- FORNECEDOR (1,n) ---> COMERCIALIZA ---> PRODUTO (1,n)
+
+-- 4. Uma mesa pode existir sem nenhuma reserva futura. Uma reserva deve estar
+-- vinculada a uma mesa.
+
+-- CLIENTE (0 ,n) ---> POSSUI ---> RESERVA (1,n)
+
+-- 5. Um pedido possui vários itens. Um item de pedido pertence a um único pedido.
+
+-- PEDIDO (1,n) ---> POSSUI ---> ITEM_PEDIDO (1,1)
