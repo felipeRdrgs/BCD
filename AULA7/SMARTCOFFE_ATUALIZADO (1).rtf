@@ -1,0 +1,337 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Atributo: \cf2\b0 AGENDADO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 002 - Atributo: \cf2\b0 ASSINATURA\cf1\b 
+\par \cf0\b0 ASSINATURA TEXT,
+\par 
+\par \cf1\b 003 - Rela\f1\'e7\'e3o: \cf2\b0 ATENDEM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 004 - Atributo: \cf2\b0 BEBIDAS\cf1\b 
+\par \cf0\b0 BEBIDAS ENUM('SEM ALCOOL','COM ALCOOL'),
+\par 
+\par \cf1\b 005 - Atributo: \cf2\b0 CAF\f1\'c9S\cf1\b 
+\par \cf0\b0\f0 CAFES VARCHAR (60)
+\par 
+\par \cf1\b 006 - Atributo: \cf2\b0 CANCELAMENTO\cf1\b 
+\par \cf0\b0 CANCELAMENTO TEXT,
+\par 
+\par \cf1\b 007 - Atributo: \cf2\b0 CARGA_HORARIA\cf1\b 
+\par \cf0\b0 CARGA_HORARIA TIMESTAMP,
+\par 
+\par \cf1\b 008 - Atributo: \cf2\b0 CARGO\cf1\b 
+\par \cf0\b0 CARGO VARCHAR(60),
+\par 
+\par \cf1\b 009 - Atributo: \cf2\b0 CATEGORIA\cf1\b 
+\par \cf0\b0 TIPO_DE_PRODUTO VARCHAR(100),
+\par 
+\par \cf1\b 010 - Entidade: \cf2\b0 CATEGORIA\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ESTRANGEIRO
+\par BEBIDAS
+\par DOCE
+\par SALGADO
+\par CAF\f1\'c9S
+\par \f0 
+\par \cf1\b 011 - Entidade: \cf2\b0 CLIENTES\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par TELEFONE
+\par NOME
+\par CPF
+\par IDADE
+\par PEDIDO
+\par E-MAIL
+\par 
+\par \cf1\b 012 - Atributo: \cf2\b0 COMUM\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 013 - Rela\f1\'e7\'e3o: \cf2\b0 CONSOMEM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 014 - Rela\f1\'e7\'e3o: \cf2\b0 CONT\'c9M\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 015 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 CPF VARCHAR(14),
+\par 
+\par \cf1\b 016 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 CPF VARCHAR(11) NOT NULL UNIQUE,
+\par 
+\par \cf1\b 017 - Atributo: \cf2\b0 CREDITO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 018 - Atributo: \cf2\b0 CREDITO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 019 - Atributo: \cf2\b0 CR\f1\'c9DITO\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 020 - Atributo: \cf2\b0 DATA_ADMISS\f1\'c3O\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 021 - Atributo: \cf2\b0 DATA_CADASTRO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 022 - Atributo: \cf2\b0 DATA_DE_ENTRADA\cf1\b 
+\par \cf0\b0 DATA_DE_ENTRADA DATETIME
+\par 
+\par \cf1\b 023 - Atributo: \cf2\b0 DATA_DE_FABRICA\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 DATA_DE_FABRICACAO DATE,
+\par 
+\par \cf1\b 024 - Atributo: \cf2\b0 DATA_E_HORA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 025 - Atributo: \cf2\b0 DATA_E_HORA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 026 - Atributo: \cf2\b0 DATA_E_HORA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 027 - Atributo: \cf2\b0 DEBITO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 028 - Atributo: \cf2\b0 DEBITO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 029 - Atributo: \cf2\b0 DEBITO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 030 - Entidade: \cf2\b0 DELIVERY\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ENDERE\f1\'c7O
+\par DATA E HORA
+\par STATUS( SAIU PARA ENTREGA, EM PREPARO)
+\par PREVIS\'c3O
+\par FORMA DE PAGAMENTO( PIX, CREDITO, DEBITO)
+\par DESTINATARIO
+\par \f0 
+\par \cf1\b 031 - Atributo: \cf2\b0 DESCRI\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 032 - Atributo: \cf2\b0 DESTINATARIO\cf1\b 
+\par \cf0\b0 DESTINATARIO VARCHAR(60),
+\par 
+\par \cf1\b 033 - Atributo: \cf2\b0 DESTINATARIO\cf1\b 
+\par \cf0\b0 DESTINATARIO VARCHAR(60),
+\par 
+\par \cf1\b 034 - Atributo: \cf2\b0 DINHEIRO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 035 - Atributo: \cf2\b0 DOCE\cf1\b 
+\par \cf0\b0 DOCE VARCHAR(60),
+\par 
+\par \cf1\b 036 - Atributo: \cf2\b0 Disponivel\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 037 - Atributo: \cf2\b0 EM PREPARO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 038 - Atributo: \cf2\b0 EMAIL\cf1\b 
+\par \cf0\b0 EMAIIL VARCHAR(60),
+\par 
+\par \cf1\b 039 - Atributo: \cf2\b0 EM_PREPARO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 040 - Atributo: \cf2\b0 ENDERE\f1\'c7O\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 041 - Atributo: \cf2\b0 ENTREGA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 042 - Rela\f1\'e7\'e3o: \cf2\b0 ENTREGAM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 043 - Atributo: \cf2\b0 ENTREGUE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 044 - Entidade: \cf2\b0 ESTOQUE\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par QUANTIDADE
+\par LOTE
+\par DATA DE ENTREGA
+\par ITENS EM ESTOQUE
+\par STATUS
+\par 
+\par \cf1\b 045 - Atributo: \cf2\b0 ESTRANGEIRO\cf1\b 
+\par \cf0\b0 ESTRANGEIRO VARCHAR(60),
+\par 
+\par \cf1\b 046 - Rela\f1\'e7\'e3o: \cf2\b0 FAZEM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 047 - Atributo: \cf2\b0 FORMA_DE_PAGAMENTO\cf1\b 
+\par \cf0\b0 FORMA_DE_PAGAMENTO ENUM('DEBITO','CREDITO','PIX','DINHEIRO'),
+\par 
+\par \cf1\b 048 - Atributo: \cf2\b0 FORMA_DE_PAGAMENTO\cf1\b 
+\par \cf0\b0 FORMA_DE_PAGAMENTO ENUM('DEBITO','CREDITO','PIX','DINHEIRO')
+\par 
+\par \cf1\b 049 - Atributo: \cf2\b0 FORMA_DE_PAGAMENTO\cf1\b 
+\par \cf0\b0 FORMA_DE_PAGAMENTO ENUM('DEBITO','CREDITO','PIX')
+\par 
+\par \cf1\b 050 - Entidade: \cf2\b0 FUNCIONARIOS\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par DATA_ADMISS\f1\'c3O
+\par CARGO
+\par ID_FUNCIONARIO
+\par CARGA_HORARIA
+\par CPF
+\par NOME
+\par SALARIO
+\par \f0 
+\par \cf1\b 051 - Rela\f1\'e7\'e3o: \cf2\b0 GERA\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 052 - Atributo: \cf2\b0 IDADE\cf1\b 
+\par \cf0\b0 IDADE INT
+\par 
+\par \cf1\b 053 - Atributo: \cf2\b0 ID_CATEGORIA\cf1\b 
+\par \cf0\b0 ID_CATEGORIA INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 054 - Atributo: \cf2\b0 ID_DELIVERY\cf1\b 
+\par \cf0\b0 ID_ENTREGA INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 055 - Atributo: \cf2\b0 ID_FIDELIDADE\cf1\b 
+\par \cf0\b0 ID_FIDELIDADE INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 056 - Atributo: \cf2\b0 ID_FUNCIONARIO\cf1\b 
+\par \cf0\b0 ID_FUNCIONARIOS INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 057 - Atributo: \cf2\b0 ID_INSUMO\cf1\b 
+\par \cf0\b0 ID_CATEGORIA INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 058 - Atributo: \cf2\b0 ID_PAGAMENTO\cf1\b 
+\par \cf0\b0 ID_PAGAMENTO INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 059 - Atributo: \cf2\b0 ID_PEDIDO\cf1\b 
+\par \cf0\b0 ID_PEDIDO INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 060 - Atributo: \cf2\b0 ID_PRODUTO\cf1\b 
+\par \cf0\b0 ID_PRODUTO INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 061 - Atributo: \cf2\b0 ID_cliente\cf1\b 
+\par \cf0\b0 ID_FUNCIONARIO INT AUTO_INCREMENT PRIMARY KEY,
+\par 
+\par \cf1\b 062 - Atributo: \cf2\b0 INFORMA\f1\'c7\'d5ES\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 063 - Atributo: \cf2\b0 Indisponivel\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 064 - Atributo: \cf2\b0 NAO ENTREGUE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 065 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60),
+\par 
+\par \cf1\b 066 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 067 - Atributo: \cf2\b0 NOME\cf1\b 
+\par \cf0\b0 NOME VARCHAR(60),
+\par 
+\par \cf1\b 068 - Atributo: \cf2\b0 NOME_INSUMO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 069 - Atributo: \cf2\b0 NUMERO_DO_PEDIDO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 070 - Entidade: \cf2\b0 PAGAMENTO\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par FORMA DE PAGAMENTO 
+\par STATUS
+\par INFORMA\f1\'c7\'d5ES
+\par VALOR
+\par DATA E HORA
+\par STATUS
+\par DESTINATARIO
+\par \f0 
+\par \cf1\b 071 - Rela\f1\'e7\'e3o: \cf2\b0 PARTICIPAM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 072 - Rela\f1\'e7\'e3o: \cf2\b0 PEDEM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 073 - Atributo: \cf2\b0 PEDIDO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 074 - Entidade: \cf2\b0 PEDIDOS\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par VALOR
+\par QUANTIDADE
+\par TIPO DE PEDIDO
+\par NUMERO DO PEDIDO
+\par PRODUTOS 
+\par DATA E HORA
+\par STATUS
+\par 
+\par \cf1\b 075 - Atributo: \cf2\b0 PIX\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 076 - Atributo: \cf2\b0 PIX\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 077 - Atributo: \cf2\b0 PIX\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 078 - Rela\f1\'e7\'e3o: \cf2\b0 POSSUI\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 079 - Atributo: \cf2\b0 PREVISAO\cf1\b 
+\par \cf0\b0 PREVIS\f1\'c3O_ENTREGA TIMESTAMP,
+\par \f0 
+\par \cf1\b 080 - Atributo: \cf2\b0 PRE\f1\'c7O_UNITARIO\cf1\b 
+\par \cf0\b0\f0 NUMERO_PRODUTO INT,\tab 
+\par 
+\par \cf1\b 081 - Atributo: \cf2\b0 PRODUTOS\cf1\b 
+\par \cf0\b0 PRODUTOS TEXT,
+\par 
+\par \cf1\b 082 - Entidade: \cf2\b0 PRODUTOS\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par VALIDADE
+\par QUANTIDADE
+\par PRE\f1\'c7O UNITARIO
+\par DATA DE FABRICA\'c7\'c3O
+\par CATEGORIA
+\par DESCRI\'c7\'c3O
+\par NOME \f0 
+\par \cf1\b 083 - Entidade: \cf2\b0 PROGRAMA_DE_FIDELIDADE\cf1\b 
+\par \cf0\b0 essa entidade organiza:
+\par ASSNATURA 
+\par VALOR
+\par TERMOS
+\par CANCELAMENTO
+\par FORMA DE PAGAMENTO
+\par 
+\par \cf1\b 084 - Atributo: \cf2\b0 PRONTO\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 085 - Atributo: \cf2\b0 Pago\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 086 - Atributo: \cf2\b0 Pendente\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 087 - Atributo: \cf2\b0 QUANTIDADE\cf1\b 
+\par \cf0\b0 QUANTIDADE INT,
+\par 
+\par \cf1\b 088 - Atributo: \cf2\b0 QUANTIDADE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 089 - Atributo: \cf2\b0 QUANTIDADE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 090 - Rela\f1\'e7\'e3o: \cf2\b0 REALIZAM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 091 - Atributo: \cf2\b0 SAIU_PARA_ENTREGA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 092 - Atributo: \cf2\b0 SALARIO\cf1\b 
+\par \cf0\b0 SALARIO FLOAT
+\par 
+\par \cf1\b 093 - Atributo: \cf2\b0 SALDO_PONTOS\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 094 - Atributo: \cf2\b0 SALGADO\cf1\b 
+\par \cf0\b0 SALGADOS VARCHAR(60)
+\par 
+\par \cf1\b 095 - Atributo: \cf2\b0 STATUS\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 096 - Atributo: \cf2\b0 STATUS\cf1\b 
+\par \cf0\b0 STATUS ENUM('DISPONIVEL','INDISPONIVEL')
+\par 
+\par \cf1\b 097 - Atributo: \cf2\b0 STATUS\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 098 - Atributo: \cf2\b0 STATUS\cf1\b 
+\par \cf0\b0 STATUS ENUM('PAGO','PENDENTE'),
+\par 
+\par \cf1\b 099 - Atributo: \cf2\b0 STATUS_ENTREGA\cf1\b 
+\par \cf0\b0 STATUS_ENTREGA ENUM('ENTREGA','N\f1\'c3O ENTREGUE'),\tab 
+\par \f0 
+\par \cf1\b 100 - Observa\f1\'e7\'e3o: \cf2\b0 SitemaSmartCoffe\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 101 - Atributo: \cf2\b0 TAXA_ENTRGA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 102 - Atributo: \cf2\b0 TELEFONE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 103 - Rela\f1\'e7\'e3o: \cf2\b0 TEM\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 104 - Atributo: \cf2\b0 TIPO_DE_PEDIDO\cf1\b 
+\par \cf0\b0 TIPO_DE_PEDIDO ENUM('COMUM','DELIVERY','AGENDADO'),
+\par 
+\par \cf1\b 105 - Atributo: \cf2\b0 ULTIMA_ATUALIZA\f1\'c7\'c3O\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 106 - Atributo: \cf2\b0 UNIDADE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 107 - Atributo: \cf2\b0 VALIDADE\cf1\b 
+\par \cf0\b0 VALIDADE DATE,
+\par 
+\par \cf1\b 108 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT,
+\par 
+\par \cf1\b 109 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT,
+\par 
+\par \cf1\b 110 - Atributo: \cf2\b0 VALOR\cf1\b 
+\par \cf0\b0 VALOR FLOAT,
+\par 
+\par \cf1\b 111 - Atributo: \cf2\b0 com_alcool\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 112 - Atributo: \cf2\b0 sem_alcool\cf1\b 
+\par \cf0\b0 
+\par 
+\par }
+ 
