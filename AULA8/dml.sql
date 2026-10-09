@@ -4,7 +4,7 @@ CREATE DATABASE SMARTCOFFE_DML_FELIPE;
 USE SMARTCOFFE_DML_FELIPE;
 
 
-CREATE TABLE CATEGORIAS (
+CREATE TABLE CATEGORIA (
     id_categorias INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(60) NOT NULL UNIQUE
 );
@@ -15,7 +15,8 @@ CREATE TABLE CLIENTE (
     email VARCHAR(120) UNIQUE,
     telefone VARCHAR(15),
     cidade VARCHAR(60) NOT NULL,
-    ativo BOOLEAN NOT NULL DEFAULT TRUE
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+    qtd_clientes INT NOT NULL
 );
 
 CREATE TABLE PRODUTO (
@@ -24,6 +25,7 @@ CREATE TABLE PRODUTO (
     preco DECIMAL(10,2) NOT NULL,
     ativo BOOLEAN NOT NULL DEFAULT TRUE,
     id_categoria INT NOT NULL,
+    qtd_produtos INT NOT NULL
 
     CONSTRAINT fk_categoria
         FOREIGN KEY (id_categoria)
@@ -41,6 +43,7 @@ CREATE TABLE PEDIDO (
     ) NOT NULL DEFAULT 'ABERTO',
     valor_total DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     id_cliente INT NOT NULL,
+    faturamento_total INT NOT NULL
 
     CONSTRAINT fk_pedido_cliente
         FOREIGN KEY (id_cliente)
