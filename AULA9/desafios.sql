@@ -155,19 +155,22 @@ DELETE FROM CATEGORIAS WHERE nome = 'Excluir Depois';
 
 SELECT * FROM CATEGORIAS WHERE nome = 'Excluir Depois';
 
-
--- 16. Crie uma categoria temporária chamada 'Excluir Depois' e remova-a.
-
-
 -- PARTE D - INTEGRIDADE E ERROS CONTROLADOS
 -- Execute uma tentativa por vez. Depois deixe o comando problemático comentado.
 
 -- 17. Tente inserir um produto com id_categoria = 9999.
 -- Qual restrição impediu a operação?
 
+iNSERT INTO PRODUTO (nome, preco, ativo, id_categoria) VALUES
+('Produto Inexistente', 10.00, TRUE, 9999);
+
 
 -- 18. Tente cadastrar um cliente usando 'ana@email.com'.
 -- Qual restrição impediu a operação?
+
+
+
+
 
 
 -- 19. Tente criar um pedido com id_cliente = 9999.
