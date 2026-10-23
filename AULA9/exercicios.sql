@@ -201,3 +201,4 @@ WHERE p.status = 'FINALIZADO'
 GROUP BY pr.id, pr.nome
 ORDER BY quantidade_vendida DESC
 LIMIT 5;
+

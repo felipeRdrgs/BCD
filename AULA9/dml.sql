@@ -212,6 +212,36 @@ GROUP BY cidade;
 SELECT id_categoria, COUNT(*) AS qtde_produtos FROM produto
 GROUP BY id_categoria;
 
+-- DEMOSNTRAÇÃO GUIADA - EVOLUINDO EM UMA CONSULTA 
+-- PASSO 1 - VISUALIZAR PRODUTOS
+
+SELECT * FROM produto;
+
+PASSO 2 -SOMENTE O NECESSARIO 
+SELECT nome, preco, id_categoria FROM produto;
+
+PASSO 3 - FILTRAR 
+SELECT nome, preco, id_categoria FROM produto
+WHERE preco > 10;00
+
+PASSO 4 - ORENAR VALORES OU INFORMAÇÕES
+SELECT nome, preco, id_categoria FROM produto
+WHERE preco > 10.00
+ORDER BY preco DESC;
+
+PASSO 5 - MOSTRAR CATEGORIAS 
+SELECT p.nome, p.preco, c.nome AS categoria FROM produto p
+INNER JOIN categoria AS c
+ON p.id_categoria = c.id
+WHERE p.preco > 10.00
+ORDER BY p.preco DESC;
+
+PASSO 6 - PERGUNTAS GERENCIAS
+SELECT CA.NOME AS CATEGORIA, COUNT(PR.ID_PRODUTO) AS PRODUTO, ROUND(AVG(PR.PRECO),2) AS PREÇO_MEDIO
+FROM CATEGORIA AS CA
+INNER JOIN PRODUTO AS PR 
+ON PR.ID_CATEGORIA = CA.ID_CATEGORIA
+GROUP BY C.ID
 
 
 
