@@ -113,6 +113,8 @@ DELETE FROM USUARIO WHERE nome = 'Francisco Magri';
 
 SELECT * FROM USUARIO;
 
+-- o usuário que possui empréstimos não pode ser excluído, porque a chave estrangeira com a regra delete impede a exclusão. Isso garante a integridade
+
 -- 12
 
 SELECT titulo, autor, quantidade_disponivel
@@ -190,25 +192,34 @@ ORDER BY total_emprestimos DESC;
 
 START TRANSACTION;
 
--- Altera a quantidade de um livro
 UPDATE LIVRO
 SET quantidade_disponivel = quantidade_disponivel + 5
 WHERE id_livro = 1;
 
--- Consulta a quantidade alterada
 SELECT * FROM LIVRO
 WHERE id_livro = 1;
 
--- Desfaz a alteração
 ROLLBACK;
 
--- Consulta novamente para comprovar
+SELECT * FROM LIVRO
+WHERE id_livro = 1;
+
+-- 22
+START TRANSACTION;
+
+UPDATE LIVRO
+SET quantidade_disponivel = quantidade_disponivel + 5
+WHERE id_livro = 1;
+
+SELECT * FROM LIVRO
+WHERE id_livro = 1;
+
+ROLLBACK;
+
 SELECT * FROM LIVRO
 WHERE id_livro = 1;
 
 -- 23
-
--- 23. SAVEPOINT
 
 START TRANSACTION;
 
@@ -230,4 +241,28 @@ WHERE id_livro IN (1, 2);
 COMMIT;
 
 -- 24
+
+START TRANSACTION;
+
+SELECT * FROM EMPRESTIMO
+WHERE id_emprestimo = 1
+AND status_emprestimo = 'ABERTO';
+
+UPDATE EMPRESTIMO
+SET status_emprestimo = 'DEVOLVIDO',
+    data_devolucao = CURRENT_DATE
+WHERE id_emprestimo = 1
+AND status_emprestimo = 'ABERTO';
+
+UPDATE LIVRO
+SET quantidade_disponivel = quantidade_disponivel + 1
+WHERE id_livro = 1;
+
+SELECT * FROM EMPRESTIMO
+WHERE id_emprestimo = 1;
+
+SELECT * FROM LIVRO
+WHERE id_livro = 1;
+
+COMMIT;
 
